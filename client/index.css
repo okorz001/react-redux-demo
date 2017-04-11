@@ -1,0 +1,9 @@
+@import 'reset-css/reset.css';
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+/* This is the root node of the entire React tree. */
+:global #app {
+    font-family: 'Noto Sans', sans-serif;
+    height: 100vh;
+    font-size: 16px;
+}

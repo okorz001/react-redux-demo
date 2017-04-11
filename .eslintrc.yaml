@@ -1,0 +1,23 @@
+---
+env:
+    es6: true
+    node: true
+parserOptions:
+    ecmaVersion: 6
+    sourceType: module
+extends:
+-   'eslint:recommended'
+rules:
+    brace-style: [error, stroustrup]
+    camelcase: error
+    comma-dangle: [error, always-multiline]
+    curly: [error, multi-line, consistent]
+    dot-location: [error, property]
+    dot-notation: error
+    eol-last: error
+    indent: [error, 4]
+    no-console: off
+    no-extra-parens: error
+    no-trailing-spaces: error
+    semi: [error, never]
+    strict: [error, global]

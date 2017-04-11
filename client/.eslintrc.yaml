@@ -1,0 +1,16 @@
+---
+plugins:
+-   react
+extends:
+-   'plugin:react/recommended'
+globals:
+    # process.env.NODE_ENV for prod/dev checks
+    process: true
+    # module.hot for hot reloading
+    module: true
+env:
+    browser: true
+    node: false
+parserOptions:
+    ecmaFeatures:
+        jsx: true
