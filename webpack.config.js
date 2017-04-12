@@ -146,16 +146,9 @@ function getCssLoaders() {
         },
     })
 
-    loaders.push({
-        loader: 'postcss-loader',
-        options: {
-            plugins: {
-                // transpile modern css and autoprefix
-                // this respects browserslist in package.json
-                'postcss-cssnext': null,
-            },
-        },
-    })
+    // despite official docs, options for this loader seem to have no effect
+    // see postcss.config.js
+    loaders.push({loader: 'postcss-loader'})
 
     // combine css into a single asset
     return ExtractTextPlugin.extract({

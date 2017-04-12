@@ -1,4 +1,11 @@
+:root {
+    --toolbar-theme: {
+        background-color: blue;
+        color: yellow;
+    }
+}
+
 .bar {
-    background-color: blue;
-    color: yellow;
+    @apply --toolbar-theme;
+    transform: rotate(30deg);
 }
