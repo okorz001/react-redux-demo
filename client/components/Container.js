@@ -1,3 +1,7 @@
 /* global require */
-const env = process.env.NODE_ENV === 'production' ? 'prod' : 'dev'
-module.exports = require(`./Container.${env}`)
+if (process.env.NODE_ENV === 'production') {
+    module.exports = require('./Container.prod')
+}
+else {
+    module.exports = require('./Container.dev')
+}
