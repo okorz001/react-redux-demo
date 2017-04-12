@@ -21,4 +21,19 @@ $ npm run dev
 
 ## Features
 
-TODO
+### Production
+
+* Compile modern JavaScript to target browsers unless supported natively
+* Compile or prefix modern CSS to target browsers unless supported natively
+* Single static JS asset
+* Single static CSS asset
+* Assets have build hash, allowing high max-age
+
+### Development
+
+* Single node process (no orphans, reuse webpack cache)
+* Hot replace JS: React components
+* Hot replace CSS
+* Hot replace JS: Redux reducer
+* Redux devtools (ctrl-h to hide, ctrl-n to switch monitors)
+* Hot reload routes in server
